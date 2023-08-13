@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
     'payment.apps.PaymentConfig',
+    'coupons.apps.CouponsConfig',
 ]
 
 MIDDLEWARE = [
@@ -141,3 +142,7 @@ STRIPE_API_VERSION = '2022-08-01'
 STRIPE_WEBHOOK_SECRET = 'whsec_156419b24373bd799f7f93a4ca5ecb8ccdb0de38a854fb4a0c52f26e0b163d3a'
 
 STATIC_ROOT = BASE_DIR / 'static'
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1
